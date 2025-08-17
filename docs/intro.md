@@ -2,46 +2,49 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Copy Page Button Plugin
 
-Let's discover **Docusaurus in less than 5 minutes**.
+**Try it out! Look for the copy button in the table of contents sidebar →**
 
-## Getting Started
+A lightweight Docusaurus plugin that adds a "Copy page" button to your documentation site, making it easy for users to extract page content as markdown for use with LLMs and AI tools.
 
-Get started by **creating a new site**.
+## ✨ Key Features
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+- 📋 **Copy page as markdown** - Clean page content extraction
+- 👁️ **View as markdown** - Preview extracted content in new tab  
+- 🤖 **AI integration** - Direct "Open in ChatGPT" and "Open in Claude" buttons
+- ⚡ **Auto-injection** - Automatically adds to table of contents sidebar
+- 🎨 **Theme-aware** - Supports light/dark themes
+- 📱 **Mobile-friendly** - Responsive design
+- 🛠️ **Zero-config** - Works out of the box
 
-### What you'll need
+## 🚀 Quick Start
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
+### Installation
 
 ```bash
-cd my-website
-npm run start
+npm install docusaurus-plugin-copy-page-button
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+### Basic Usage
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+Add the plugin to your `docusaurus.config.js`:
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+```js
+module.exports = {
+  plugins: ["docusaurus-plugin-copy-page-button"],
+};
+```
+
+That's it! The button will automatically appear in your table of contents sidebar.
+
+## 🎯 How It Works
+
+The plugin intelligently extracts page content by:
+
+1. **Selecting** the main content area
+2. **Removing** navigation, sidebars, and UI elements  
+3. **Cleaning** admonition blocks and formatting
+4. **Generating** clean markdown with title and URL
+
+Perfect for sharing documentation with AI assistants!

@@ -23,3 +23,12 @@ slorber:
     linkedin: sebastienlorber
     github: slorber
     newsletter: https://thisweekinreact.com
+
+portdeveloper:
+  name: Port Developer
+  title: Plugin Developer
+  url: https://github.com/portdeveloper
+  image_url: https://github.com/portdeveloper.png
+  page: true
+  socials:
+    github: portdeveloper
