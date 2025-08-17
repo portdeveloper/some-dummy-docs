@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Copy Page Button Plugin',
-  tagline: 'Enhance your Docusaurus site with intelligent page copying',
+  title: 'Docusaurus Copy Page Button Plugin | Extract Docs for AI Tools',
+  tagline: 'Streamline documentation workflows with one-click markdown extraction for ChatGPT, Claude, and AI-powered development',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -76,6 +76,17 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: 'img/unfurl-optimized.png',
+    metadata: [
+      {name: 'description', content: 'Docusaurus plugin for one-click documentation extraction as markdown. Perfect for AI tools like ChatGPT and Claude. Zero-configuration setup with theme-aware design.'},
+      {name: 'keywords', content: 'docusaurus, plugin, copy page, markdown, AI tools, ChatGPT, Claude, documentation, developer tools, content extraction'},
+      {name: 'author', content: 'Port Developer'},
+      {property: 'og:title', content: 'Docusaurus Copy Page Button Plugin | Extract Docs for AI Tools'},
+      {property: 'og:description', content: 'Streamline documentation workflows with one-click markdown extraction for ChatGPT, Claude, and AI-powered development'},
+      {property: 'og:type', content: 'website'},
+      {property: 'twitter:card', content: 'summary_large_image'},
+      {property: 'twitter:title', content: 'Docusaurus Copy Page Button Plugin | Extract Docs for AI Tools'},
+      {property: 'twitter:description', content: 'One-click documentation extraction as markdown for AI tools. Zero-configuration Docusaurus plugin.'},
+    ],
     navbar: {
       title: 'Copy Page Button',
       logo: {
