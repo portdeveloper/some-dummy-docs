@@ -62,4 +62,4 @@ export default config;
 
 - [Explore customization options](./customization)
 - [Learn about advanced features](./advanced-features)
-- [See real-world examples](./examples)
+- [See real-world examples](../tutorial-extras/examples)
